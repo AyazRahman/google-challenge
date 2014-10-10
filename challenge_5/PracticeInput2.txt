@@ -1,0 +1,22 @@
+substringof('Hot', ProductName)
+CategoryID ge 3
+4 ge SupplierID
+Discontinued or UnitsInStock eq 0
+UnitsOnOrder ge 50
+UnitsOnOrder gt 9 and not (CategoryID eq 1)
+Discontinued ne true and CategoryID eq 3
+substringof('jar', QuantityPerUnit) or substringof('can', QuantityPerUnit)
+substringof('''', ProductName)
+ReorderLevel lt 10 and (SupplierID eq 1 or SupplierID eq 3)
+substringof('Hot', ProductName)
+CategoryID eq 7
+substringof('pp', ProductName) or substringof('cc', ProductName)
+UnitsOnOrder ge 50
+UnitsOnOrder gt 9 and not (CategoryID eq 1)
+Discontinued ne true and CategoryID eq 3
+substringof('''', ProductName)
+Discontinued ne true and CategoryID eq 3
+substringof('oz', QuantityPerUnit) or substringof('lb', QuantityPerUnit)
+Discontinued ne true and CategoryID eq 3
+25 eq ReorderLevel
+substringof('pkg', QuantityPerUnit) and substringof(' - ', QuantityPerUnit)

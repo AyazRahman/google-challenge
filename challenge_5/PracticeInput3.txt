@@ -1,0 +1,19 @@
+Discontinued or UnitsInStock lt 5
+SupplierID eq 2 or substringof('ml', QuantityPerUnit)
+substringof('bot', QuantityPerUnit)
+startswith(ProductName, 'Orig') or startswith(ProductName, 'Chef')
+UnitsInStock lt 15 and CategoryID eq 4
+ReorderLevel lt 25 and (SupplierID eq 2)
+substringof('Hot', ProductName) or ReorderLevel gt 10
+CategoryID ne 3 and UnitsInStock lt 10
+substringof('bottle', QuantityPerUnit)
+ReorderLevel lt 10 and (SupplierID eq 1 or SupplierID eq 3)
+substringof('Hot', ProductName)
+CategoryID eq 7
+Discontinued ne true and CategoryID eq 3
+25 eq ReorderLevel
+substringof('pkg', QuantityPerUnit) and substringof(' - ', QuantityPerUnit)
+UnitsOnOrder gt 20
+CategoryID le 3 or UnitsOnOrder ge 4
+4 eq SupplierID or substringof('cans', QuantityPerUnit)
+UnitsInStock lt 4 and SupplierID eq 3
